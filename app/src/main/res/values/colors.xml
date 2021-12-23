@@ -11,4 +11,6 @@
     <color name="darkColor">#212124</color>
     <color name="darkColor2">#1e2026</color>
     <color name="darkColor3">#23252e</color>
+    <color name="offWhite">#bfbfbf</color>
+    <color name="grey">#292b30</color>
 </resources>

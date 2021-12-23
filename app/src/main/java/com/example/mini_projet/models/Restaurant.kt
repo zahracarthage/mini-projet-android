@@ -11,9 +11,20 @@ data class Restaurant (
     var title : String?=null,
     @SerializedName("description")
     var description : String?=null,
+    @SerializedName("image")
+    var image: String?=null,
+    @SerializedName("adresse")
+    var adresse: String?=null,
+    @SerializedName("capacity")
+    var capacity: String?=null,
+    @SerializedName("category")
+    var category: List<String>?=null,
+
+
 
 
 ) : Serializable
+
 
 
 

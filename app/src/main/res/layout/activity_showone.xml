@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkColor2"
+    tools:context=".views.showone">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/relativelayout1"
+        android:layout_height="1000px"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        app:layout_constraintTop_toBottomOf="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        >
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btnWifi"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/ic_wifi"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="40dp"
+            android:tint="@color/offWhite"
+            app:itemIconTint="@color/offWhite"
+            android:backgroundTint="@color/offWhite"
+            />
+        <TextView
+            android:id="@+id/btnWifiTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/btnWifi"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/offWhite"
+            android:textSize="10sp"
+            android:text="Free Wifi"
+            android:textStyle="bold"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btnLike"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/ic_baseline_favorite_24"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/offWhite"
+            android:layout_marginEnd="40dp"
+            android:layout_toEndOf="@id/btnWifi"
+            />
+
+        <TextView
+            android:id="@+id/btnLikeText"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/btnWifi"
+            android:layout_toEndOf="@+id/btnWifiTxt"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/offWhite"
+            android:textSize="10sp"
+            android:text="Love"
+            android:textStyle="bold"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMenu"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/ic_menu"
+            android:layout_marginEnd="40dp"
+
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/offWhite"
+            android:layout_toEndOf="@+id/btnLike"
+            android:foregroundTint="@color/offWhite"
+            />
+        <TextView
+            android:id="@+id/btnMenuTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/btnWifi"
+            android:layout_toEndOf="@+id/btnLikeText"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/offWhite"
+            android:textSize="10sp"
+            android:text="Menu"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnShare"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_toEndOf="@+id/btnMenu"
+            android:background="@drawable/ic_share"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/offWhite"
+            />
+        <TextView
+            android:id="@+id/btnShareTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/btnWifi"
+            android:layout_toEndOf="@+id/btnMenuTxt"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/offWhite"
+            android:textSize="10sp"
+            android:text="Share"
+            android:textStyle="bold"
+            />
+        <View
+
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/btnWifi"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativelayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="600px">
+        <TextView
+            android:id="@+id/aboutTxt"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="25dp"
+            android:text="ABOUT"/>
+        <TextView
+            android:id="@+id/aboutSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="@color/offWhite"
+            android:textSize="19sp"
+            android:text="Share"
+            android:textStyle="normal"
+            android:layout_below="@+id/aboutTxt"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
