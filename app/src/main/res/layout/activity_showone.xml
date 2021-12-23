@@ -6,17 +6,19 @@
     android:layout_height="match_parent"
     android:background="@color/darkColor2"
     tools:context=".views.showone">
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/picture"
+
+    <ImageView
+        android:id="@+id/resaurantpicture"
         android:layout_width="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/relativelayout1"
         android:layout_height="1000px"/>
 
+
     <RelativeLayout
         android:id="@+id/relativelayout1"
-        app:layout_constraintTop_toBottomOf="@+id/picture"
+        app:layout_constraintTop_toBottomOf="@+id/resaurantpicture"
         android:layout_width="match_parent"
         android:layout_height="250px"
         >

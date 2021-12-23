@@ -20,7 +20,7 @@ interface ApiInterface {
     fun getCategories(): Call<ArrayList<String>>
 
     @GET("/restaurants/{id}")
-    fun findRestaurantbyId(@Path("id") id: String,): Call<Restaurant?>?
+    fun findRestaurantbyId(@Path("id") id: String?): Call<Restaurant?>?
 
 
 }
