@@ -8,16 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mini_projet.R
 import com.example.mini_projet.models.Restaurant
 import com.example.mini_projet.views.showone
 import com.squareup.picasso.Picasso
-import org.w3c.dom.Text
 
 class restaurantadapter(private var restaurantList: ArrayList<Restaurant>, private val context: Context) : RecyclerView.Adapter<restaurantadapter.ViewHolder>() {
-    //val restaurant = restaurantList.get(position)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(LayoutInflater.from(context).inflate(R.layout.restaurant_card_view, parent, false))
@@ -32,14 +29,13 @@ class restaurantadapter(private var restaurantList: ArrayList<Restaurant>, priva
         notifyDataSetChanged()
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var url: String = "http://192.168.1.9:3000/"
+        var url: String = "http://192.168.1.6:3000/"
         val restaurant = restaurantList.get(position)
         holder.titleTextView?.text = restaurant.title
         holder.categoryTextView?.text = restaurant.category?.joinToString();
         holder.descriptionTxtView?.text=restaurant.description
         holder.adresseTxtView?.text=restaurant.adresse
         holder.idTxtView?.text= restaurant._id
-
         Picasso.with(context).load(url+restaurant.image).into(holder.restoImg)
 
 

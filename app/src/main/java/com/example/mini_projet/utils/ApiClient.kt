@@ -1,4 +1,4 @@
-package com.example.mini_projet.utilis
+package com.example.mini_projet.utils
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

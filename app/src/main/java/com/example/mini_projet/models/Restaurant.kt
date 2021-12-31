@@ -19,11 +19,43 @@ data class Restaurant (
     var capacity: String?=null,
     @SerializedName("category")
     var category: List<String>?=null,
+    @SerializedName("Menu")
+    var ListMenu: ArrayList<Menu> = ArrayList(),
+    @SerializedName("localisation")
+    var RestaurantLocalisation: ArrayList<Localisation> = ArrayList(),
 
 
 
 
 ) : Serializable
+{
+
+    data class Menu(
+        @SerializedName("_id")
+        var menuId: String? =null,
+        @SerializedName("menuName")
+        var menuName :String? = null,
+        @SerializedName("menuType")
+        var menuType : String? =null,
+        @SerializedName("menuDescription")
+        var menuDescription: String ? =null
+
+    )
+    data class Localisation(
+        @SerializedName("_id")
+        var localisationId: String?=null,
+        @SerializedName("Longitude")
+        var Longititude: Double,
+        @SerializedName("Latitude")
+        var Latitude: Double ,
+        @SerializedName("zoomIndex")
+        var zoomIndex: Double
+    )
+
+}
+
+
+
 
 
 

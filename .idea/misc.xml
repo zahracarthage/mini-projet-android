@@ -22,17 +22,26 @@
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/gradiant_overlay.xml" value="0.1875" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_back.xml" value="0.26205128205128203" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_email.xml" value="0.1875" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_home.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_location.xml" value="0.2537037037037037" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_map.xml" value="0.15416666666666667" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_menu.xml" value="0.15416666666666667" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_password.xml" value="0.15416666666666667" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_person.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_profil.xml" value="0.2537037037037037" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_search.xml" value="0.2537037037037037" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_share.xml" value="0.2537037037037037" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_shopping.xml" value="0.15416666666666667" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/ic_wifi.xml" value="0.2537037037037037" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/localisation.xml" value="0.171875" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/drawable/rounded_corner.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/accueil.xml" value="0.11956521739130435" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/activity_accueil.xml" value="0.1" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/activity_actimain.xml" value="0.2223731884057971" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/activity_main.xml" value="0.11956521739130435" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/activity_main1.xml" value="0.144" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/activity_maps.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/activity_maps2.xml" value="0.11005434782608696" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/activity_showone.xml" value="0.29343629343629346" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/actvititym.xml" value="0.1721014492753623" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/categorie_card_view.xml" value="0.25416666666666665" />
@@ -47,12 +56,14 @@
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/restaurant_card_view.xml" value="0.2" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/sign_up.xml" value="0.11956521739130435" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/splash_screen.xml" value="0.2" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/layout/toolbar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.176" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12864583333333332" />
         <entry key="..\:/Users/zcart/Desktop/mi,ip^rpjet/Mini_Projet/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1484375" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
