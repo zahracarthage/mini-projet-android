@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/MenuHome">
+    <fragment
+        android:id="@+id/MenuHome"
+        android:name="com.example.mini_projet.views.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_showOneFragment"
+            app:destination="@id/showOneFragment" />
+        <action
+            android:id="@+id/action_MenuHome_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showOneFragment"
+        android:name="com.example.mini_projet.views.show_one.ShowOneFragment"
+        android:label="ShowOneFragment" >
+        <argument
+            android:name="resturant"
+            app:argType="com.example.mini_projet.models.Restaurant" />
+        <action
+            android:id="@+id/action_showOneFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_showOneFragment_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.mini_projet.views.menu.MenuFragment"
+        android:label="MenuFragment" >
+        <argument
+            android:name="menu"
+            app:argType="com.example.mini_projet.models.Menus" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.mini_projet.views.search.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_showOneFragment"
+            app:destination="@id/showOneFragment" />
+        <argument
+            android:name="restaurant_list"
+            app:argType="com.example.mini_projet.models.RestaurantList" />
+        <argument
+            android:name="query"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.mini_projet.views.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" >
+        <argument
+            android:name="resturant"
+            app:argType="com.example.mini_projet.models.Restaurant" />
+    </activity>
+    <action
+        android:id="@+id/action_global_mapsActivity"
+        app:destination="@id/mapsActivity"
+        app:enterAnim="@anim/down_animation" />
+    <fragment
+        android:id="@+id/allPlaces"
+        android:name="com.example.mini_projet.views.all_locations.AllLocationsFragment"
+        android:label="AllLocationsFragment" >
+        <action
+            android:id="@+id/action_allPlaces_to_showOneFragment"
+            app:destination="@id/showOneFragment" />
+    </fragment>
+</navigation>

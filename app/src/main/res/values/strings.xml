@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mini_Projet</string>
+    <string name="mustNotBeEmpty">Must Not Be Empty</string>
+    <string name="liveyourlife">Live your life smarter</string>
+    <string name="scontinue">continue</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_place_on_maps">PlaceOnMapsActivity</string>
+    <string name="title_activity_all_places">allPlaces</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
