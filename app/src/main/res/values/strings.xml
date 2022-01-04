@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">Mini_Projet</string>
     <string name="mustNotBeEmpty">Must Not Be Empty</string>
-    <string name="liveyourlife">Live your life smarter</string>
-    <string name="scontinue">continue</string>
-    <string name="title_activity_maps">MapsActivity</string>
-    <string name="title_activity_place_on_maps">PlaceOnMapsActivity</string>
-    <string name="title_activity_all_places">allPlaces</string>
+    <string name="Usernameslength">Username must be at least 5 characters</string>
+    <string name="passworderror">Password must be at least 5 characters</string>
+    <string name="exsit">This username is already taken</string>
+    <string name="noreserv">You Can\'t Reserve on this day!</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="checkYourEmail">Check your email !</string>
+    <string name="invalidcode">This code invalid !</string>
 </resources>

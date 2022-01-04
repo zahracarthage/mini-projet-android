@@ -9,7 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.databinding.adapters.NumberPickerBindingAdapter.setValue
 import com.example.mini_projet.R
-//import com.example.mini_projet.adapters.restaurantadapter
 import com.example.mini_projet.models.Restaurant
 import com.example.mini_projet.utils.ApiClient
 import com.squareup.picasso.Picasso

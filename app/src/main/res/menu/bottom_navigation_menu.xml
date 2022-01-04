@@ -1,52 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_weight=".2"
-    android:gravity="center"
-    android:layout_centerVertical="true"
-    android:layout_centerHorizontal="true"
-    android:backgroundTint="@color/offWhite"
-    android:tint="@color/offWhite"
-    app:itemIconTint="@color/offWhite"
-    android:theme = "@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    >
-
-    <group
-        android:id="@+id/toolbar_menu"
-        android:visible="true">
 
     <item
         android:title="Home"
-        android:id="@+id/MenuHome"
+        android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
-        android:backgroundTint="@color/offWhite"
-        android:iconTint="@color/offWhite"
-        app:showAsAction="always" />
+        android:enabled="true"
+        />
 
     <item
-        android:id="@+id/MenuProfile"
-        android:icon="@drawable/ic_user"
-        app:showAsAction="always"
-        android:backgroundTint="@color/offWhite"
-        android:title="Search"/>
+    android:id="@+id/navigation_panier"
+    android:icon="@drawable/ic_panier"
+    android:title="My Order"/>
+
+    <item
+        android:title="Username"
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/ic_person"/>
 
 
     <item
-        android:title="Location"
-        android:id="@+id/allPlaces"
-        app:showAsAction="always"
-        android:backgroundTint="@color/offWhite"
-        android:icon="@drawable/ic_location"/>
-
+        android:title="Subscriptions"
+        android:id="@+id/navigation_users"
+        android:icon="@drawable/ic_profil" />
     <item
-        android:title="Panier"
-        android:id="@+id/MenuPanier"
-        app:showAsAction="always"
-        android:backgroundTint="@color/offWhite"
-        android:icon="@drawable/ic_baseline_shopping_bag_24" />
-
-    </group>
-
+        android:title="Posts"
+        android:id="@+id/navigation_post"
+        android:icon="@drawable/ic_post" />
 </menu>

@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/MenuHome">
+    app:startDestination="@id/HomeFragment">
     <fragment
-        android:id="@+id/MenuHome"
-        android:name="com.example.mini_projet.views.home.HomeFragment"
+        android:id="@+id/HomeFragment"
+        android:name="com.example.mini_projet.views.fragement.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_showOneFragment"
@@ -14,10 +14,16 @@
         <action
             android:id="@+id/action_MenuHome_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_allPlaces"
+            app:destination="@id/allPlaces" />
+        <action
+            android:id="@+id/action_HomeFragment_to_detailresto"
+            app:destination="@id/detailresto" />
     </fragment>
     <fragment
         android:id="@+id/showOneFragment"
-        android:name="com.example.mini_projet.views.show_one.ShowOneFragment"
+        android:name="com.example.mini_projet.views.fragement.ShowOneFragment"
         android:label="ShowOneFragment" >
         <argument
             android:name="resturant"
@@ -31,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.mini_projet.views.menu.MenuFragment"
+        android:name="com.example.mini_projet.views.fragement.MenuFragment"
         android:label="MenuFragment" >
         <argument
             android:name="menu"
@@ -60,16 +66,32 @@
             android:name="resturant"
             app:argType="com.example.mini_projet.models.Restaurant" />
     </activity>
+
     <action
         android:id="@+id/action_global_mapsActivity"
         app:destination="@id/mapsActivity"
         app:enterAnim="@anim/down_animation" />
     <fragment
         android:id="@+id/allPlaces"
-        android:name="com.example.mini_projet.views.all_locations.AllLocationsFragment"
+        android:name="com.example.mini_projet.views.fragement.AllLocationsFragment"
         android:label="AllLocationsFragment" >
         <action
             android:id="@+id/action_allPlaces_to_showOneFragment"
             app:destination="@id/showOneFragment" />
     </fragment>
+
+    <activity
+        android:id="@+id/detailresto"
+        android:name="com.example.mini_projet.views.detailresto"
+        android:label="detailrespo"
+        tools:layout="@layout/activity_detailresto" >
+        <argument
+            android:name="resturant"
+            app:argType="com.example.mini_projet.models.Restaurant" />
+        <action
+            android:id="@+id/actiondetailResto_to_menuFragment"
+            app:destination="@id/menuFragment"
+            />
+    </activity>
+
 </navigation>

@@ -1,25 +1,17 @@
 package com.example.mini_projet.models
 
-
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
-import kotlinx.parcelize.Parcelize
+import kotlinx.android.parcel.Parcelize
 import java.io.Serializable
-
 @Parcelize
-data class Restaurant(
-    @SerializedName("_id")
-    var _id: String? = null,
-    @SerializedName("title")
-    var title: String? = null,
-    @SerializedName("description")
-    var description: String? = null,
-    @SerializedName("image")
-    var image: String? = null,
-    @SerializedName("adresse")
-    var adresse: String? = null,
-    @SerializedName("capacity")
-    var capacity: String? = null,
+data class Restaurant (
+    @SerializedName("_id") val id : String,
+    @SerializedName("name") val name : String,
+    @SerializedName("picture") var picture : String,
+    @SerializedName("about") var about : String,
+    @SerializedName("nbplaces") var nbplaces : MutableList<String>,
+    @SerializedName("reservation") val reservation : MutableList<String>,
     @SerializedName("category")
     var category: List<String>? = null,
     @SerializedName("Menu")
@@ -69,6 +61,7 @@ data class RestaurantList(val list: ArrayList<Restaurant>) : Parcelable
 
 @Parcelize
 data class LocalizationList(val list: ArrayList<Restaurant.Localisation>) : Parcelable
+
 
 
 

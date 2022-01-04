@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/FollowingNavig"
+    android:orientation="vertical"
+    android:background="#1E2026"
+    tools:context=".views.VerficationAccount">
+    <ImageView
+        android:id="@+id/imgretour"
+    android:layout_width="@dimen/_30sdp"
+    android:layout_height="@dimen/_30sdp"
+    android:src="@drawable/ic_retour"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/textverifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:text="verify your account"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textSize="@dimen/_16sdp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textverifier"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEmail"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/sendmail"
+            android:layout_width="@dimen/_120sdp"
+            android:backgroundTint="#F48522"
+            android:layout_height="wrap_content"
+            android:text="Send Mail"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Code"
+            android:textColorHint="@color/white"
+            app:errorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendmail"
+            app:startIconDrawable="@drawable/ic_code"
+            app:startIconTint="@color/white"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCode"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:visibility="gone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/govalid"
+            android:layout_width="@dimen/_120sdp"
+            android:backgroundTint="#F48522"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/compteverifier"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Your account is verified"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</LinearLayout>

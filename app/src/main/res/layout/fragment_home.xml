@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/darkColor2">
 
-
-
-
     <RelativeLayout
         android:id="@+id/relative1"
         android:layout_width="match_parent"
@@ -36,7 +33,7 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="15dp"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="@color/darkColor3"
+            android:backgroundTint="@color/white"
             android:imeOptions="actionSearch" />
 
     </RelativeLayout>

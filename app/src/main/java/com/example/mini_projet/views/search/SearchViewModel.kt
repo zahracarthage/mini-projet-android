@@ -22,7 +22,7 @@ class SearchViewModel(savedStateHandle: SavedStateHandle) : ViewModel() {
     fun handleQuery(p0: String?) {
         if (p0 != null) {
             val items: ArrayList<Restaurant>? = restaurants?.list?.filter {
-                it.title?.lowercase(locale = Locale.getDefault())
+                it.name?.lowercase(locale = Locale.getDefault())
                     ?.contains(p0) == true || it.category?.joinToString()?.lowercase()
                     ?.contains(p0) == true
             } as ArrayList<Restaurant>?

@@ -1,6 +1,8 @@
 package com.example.mini_projet.views.search
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +16,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mini_projet.adapters.RestaurantAdapter
 import com.example.mini_projet.databinding.SearchLayoutBinding
+import com.example.mini_projet.models.Menus
 import com.example.mini_projet.models.Restaurant
+import com.example.mini_projet.views.detailresto
 
 class SearchFragment() : Fragment(), RestaurantAdapter.CustomListeners {
 
@@ -86,7 +90,17 @@ class SearchFragment() : Fragment(), RestaurantAdapter.CustomListeners {
     }
 
     override fun onItemSelected(restaurant: Restaurant) {
-        requireView().findNavController()
-            .navigate(SearchFragmentDirections.actionSearchFragmentToShowOneFragment(restaurant))
+        val intent = Intent(activity, detailresto::class.java)
+        intent.putExtra("id",restaurant.id)
+        intent.putExtra("menu", Menus(restaurant.ListMenu))
+        intent.putExtra("name",restaurant.name)
+        intent.putExtra("picture",restaurant.picture)
+        intent.putExtra("about",restaurant.about)
+        intent.putExtra("longitude",restaurant.RestaurantLocalisation[0].Longititude)
+        intent.putExtra("latitude",restaurant.RestaurantLocalisation[0].Latitude)
+        intent.putExtra("zoomIndex",restaurant.RestaurantLocalisation[0].zoomIndex)
+        requireActivity().startActivity(intent)
+        Log.e("aa","aa")
+
     }
 }

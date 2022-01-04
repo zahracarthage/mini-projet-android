@@ -41,19 +41,16 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onMapReady(googleMap: GoogleMap) {
 
-        val restaurant = args.resturant
 
 
         mMap = googleMap
 
-        Log.d("rest", restaurant.toString())
-        args.resturant?.RestaurantLocalisation.getOrNull(0)?.let {
-            val latLng = LatLng(it.Latitude, it.Longititude)
+        val latLng = LatLng(intent.getDoubleExtra("latitude",0.0), intent.getDoubleExtra("longitude",0.0))
             mMap.addMarker(
-                MarkerOptions().position(latLng).title(restaurant.title)
+                MarkerOptions().position(latLng).title(intent.getStringExtra("name").toString())
             )
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17F))
-        }
+
 
         mMap.uiSettings.isZoomControlsEnabled = true
 

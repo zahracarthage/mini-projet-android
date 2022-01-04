@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/colorButton">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="start"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:drawableTint="#ede0d4"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="start"
+                android:hint="Search"
+                android:textColor="#ddb892"
+                android:textColorHint="#ede0d4"
+                android:padding="10dp"
+                android:textSize="@dimen/_16sdp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>
